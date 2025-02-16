@@ -55,7 +55,7 @@ body {
 }
 
 .logo {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
@@ -152,7 +152,7 @@ background-image: url("pozadie.jpg");
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 0rem;
     background: linear-gradient(to right, var(--primary), var(--accent));
