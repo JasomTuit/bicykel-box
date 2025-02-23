@@ -154,10 +154,29 @@ background-image: url("pozadie.jpg");
 .hero h1 {
     font-size: 2.8rem;
     line-height: 1.2;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
     background: linear-gradient(to right, var(--primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.h1-main {
+    display: block; /* Hlavný riadok na samostatnom riadku */
+    font-size: 2.8rem; /* Zachová pôvodnú veľkosť */
+}
+
+.h1-sub {
+    display: block; /* Podriadok na samostatnom riadku */
+    font-size: 1.9rem; /* Menšia veľkosť pre spodný riadok */
+}
+
+@media (max-width: 768px) {
+    .h1-main {
+        font-size: 2rem;
+    }
+    .h1-sub {
+        font-size: 1.2rem;
+    }
 }
 
 .hero p {
