@@ -170,7 +170,7 @@ background-image: url("pozadie.jpg");
 
 .h1-sub {
     display: block; /* Podriadok na samostatnom riadku */
-    font-size: 2rem; /* Menšia veľkosť pre spodný riadok */
+    font-size: 1.9rem; /* Menšia veľkosť pre spodný riadok */
 }
 
 @media (max-width: 768px) {
@@ -178,7 +178,7 @@ background-image: url("pozadie.jpg");
         font-size: 2.1rem;
     }
     .h1-sub {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -354,6 +354,7 @@ h3 {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
+	background-image: none !important; /* Zruší načítanie obrázka */
     }
 
     .hero h1 {
