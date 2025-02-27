@@ -115,7 +115,7 @@ body {
 
 .hamburger.active span:last-child {
     transform: rotate(-45deg);
-    bottom: 40%;
+    bottom: 50%;
 }
 
 /* Nav Links */
