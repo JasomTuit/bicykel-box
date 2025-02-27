@@ -13,12 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    text-align: center;
-}
-
-.bold {
-    font-weight: 900; 
-	color: #515e71;
 }
 
 body {
@@ -26,6 +20,15 @@ body {
     line-height: 1.6;
     color: var(--text);
     background: var(--background);
+}
+
+p {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 900; 
+	color: #515e71;
 }
 
 .container {
@@ -155,6 +158,7 @@ background-image: url("pozadie.jpg");
     background: linear-gradient(to right, var(--primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .h1-main {
@@ -188,6 +192,10 @@ background-image: url("pozadie.jpg");
     background: var(--primary-dark);
 }
 
+h3 {
+    text-align: center; 
+}
+
 /* Sections */
 section {
     padding: 40px 0; 
@@ -198,6 +206,7 @@ section {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: var(--text); 
+    text-align: center
 /*    background: linear-gradient(to right, var(--primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -207,6 +216,7 @@ section {
     max-width: 800px;
     margin: 0 auto;
     color: var(--text-light);
+    text-align: center
 }
 
 .products-grid {
@@ -310,6 +320,7 @@ section {
     background: var(--text);
     color: var(--white);
     padding: 3rem 0;
+    text-align: center;
 }
 
 .social-links {
