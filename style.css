@@ -167,15 +167,6 @@ background-image: url("pozadie.jpg");
     font-size: 1.9rem; /* Menšia veľkosť pre spodný riadok */
 }
 
-@media (max-width: 768px) {
-    .h1-main {
-        font-size: 2.1rem;
-    }
-    .h1-sub {
-        font-size: 1.4rem;
-    }
-}
-
 .hero p {
     font-size: 1.25rem;
     color: var(--text-light);
@@ -346,9 +337,13 @@ section {
     .hero h1 {
         font-size: 2.5rem;
     }
-
-    .nav-links {
-        display: none;
+	
+    .h1-main {
+    font-size: 2.1rem;
+    }
+	
+    .h1-sub {
+    font-size: 1.4rem;
     }
 
     .products-grid {
@@ -358,15 +353,11 @@ section {
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-}
-
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
+	
     .hamburger {
         display: block;
     }
-
+	
     .nav-links {
         display: flex;
         flex-direction: column;
