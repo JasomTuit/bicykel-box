@@ -147,6 +147,7 @@ background-image: url("pozadie.jpg");
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .hero h1 { 
