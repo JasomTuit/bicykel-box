@@ -261,7 +261,8 @@ section {
 .product-specs li {
     margin-bottom: 0.5rem;
     display: flex;
-     align-items: center;  
+    align-items: center; 
+    text-align: center;
     gap: 0.5rem; 
 }
 
