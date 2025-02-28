@@ -249,7 +249,7 @@ section {
 .product-card p {
     color: var(--text-light);
     margin-bottom: 1.5rem; 
-    text-align: left; 
+/*    text-align: left; */
 }
 
 .product-specs {
