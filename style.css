@@ -130,6 +130,10 @@ p {
     transition: color 0.3s;
 }
 
+.oosu {
+    color: var(--white);
+}
+
 .nav-links a:hover {
     color: var(--primary);
 }
@@ -139,7 +143,7 @@ p {
     padding: 100px 0 80px;
 /* background: linear-gradient(rgba(37,99,235,0.05), rgba(37,99,235,0.1));  */
 background-color: var(--white);
-background-image: url("pozadie.jpg"); 
+background-image: url("pozadie.webp"); 
   background-repeat: no-repeat;
   background-position: center;
 }
