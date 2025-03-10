@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /ochrana-osobnych-udajov.html
+Sitemap: https://bicykel-box.sk/sitemap.xml
