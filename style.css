@@ -306,11 +306,11 @@ section {
 }
 
 .contact-item {
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.2rem;
 }
 
 .contact-item a {
@@ -351,6 +351,10 @@ section {
     body {
         overflow-x: hidden;
 	background-image: none !important; /* Zruší načítanie obrázka */
+    }
+
+    .hero {
+        background-image: none !important;
     }
 
     .hero h1 {
