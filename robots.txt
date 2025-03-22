@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: 
-Sitemap: https://bicykel-box.sk/sitemap.xml
+Allow: /
+
+Sitemap: https://www.bicykel-box.sk/sitemap.xml

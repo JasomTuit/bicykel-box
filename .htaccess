@@ -1,0 +1,13 @@
+# Zapnutie prepisovacieho modulu
+RewriteEngine On
+
+# Presmerovanie z www na non-www (s HTTPS)
+RewriteCond %{HTTP_HOST} ^www\.bicykel-box\.sk [NC]
+RewriteRule ^(.*)$ https://bicykel-box.sk/$1 [L,R=301]
+
+# Presmerovanie z HTTP na HTTPS (pre non-www aj www)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://bicykel-box.sk/$1 [L,R=301]
+
+# Nastavenie vlastnej 404 stránky
+ErrorDocument 404 /404.html
