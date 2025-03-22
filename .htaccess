@@ -11,3 +11,42 @@ RewriteRule ^(.*)$ https://bicykel-box.sk/$1 [L,R=301]
 
 # Nastavenie vlastnej 404 stránky
 ErrorDocument 404 /404.html
+
+# Cachovanie statických súborov pre zlepšenie TTFB a výkonu
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # CSS súbory - 1 tyzden
+    ExpiresByType text/css "access plus 1 week"
+    # Obrázky (jpg, png, webp, gif) - 1 tyzden
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/webp "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 week"
+    # Ikony (favicon) - 1 mesiac
+    ExpiresByType image/x-icon "access plus 1 month"
+    # JavaScript - 1 mesiac
+    ExpiresByType application/javascript "access plus 1 week"
+    # HTML súbory - 1 hodina (kratšia doba pre dynamický obsah)
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Kompresia súborov pre rýchlejšie načítanie
+<IfModule mod_deflate.c>
+    # Zapnutie kompresie pre vybrané typy súborov
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Nastavenie hlavičiek pre kontrolu cache (ETag a Cache-Control)
+<IfModule mod_headers.c>
+    # Cache-Control pre statické súbory
+    <FilesMatch "\.(css|jpg|jpeg|png|webp|gif|ico|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+    # Odstránenie ETag pre zníženie zaťaženia servera (voliteľné)
+    Header unset ETag
+    FileETag None
+</IfModule>
