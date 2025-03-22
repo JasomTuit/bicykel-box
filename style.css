@@ -130,8 +130,20 @@ p {
     transition: color 0.3s;
 }
 
-.oosu {
+.footlink {
     color: var(--white);
+}
+
+.footlink:visited {
+    color: var(--white); /* Biela farba aj po kliknutí */
+}
+
+.footlink:hover {
+    color: var(--accent); /* Zelená (#22c55e) pri hoveri pre vizuálnu odozvu */
+}
+
+.footlink:active {
+    color: var(--white); /* Biela pri kliknutí */
 }
 
 .nav-links a:hover {
@@ -320,7 +332,7 @@ section {
 }
 
 .contact-item a:hover {
-    color: var(--primary-dark);
+    color: var(--text);
 }
 
 /* Footer */
